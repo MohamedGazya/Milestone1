@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Thermonitor</string>
+    <string name="login">Login</string>
+    <string-array name="Operating_Systems">
+        <item> Android </item>
+        <item> Iphone </item>
+        <item> Windows </item>
+        <item> Blackberry </item>
+        <item> Linux </item>
+    </string-array>
+</resources>
