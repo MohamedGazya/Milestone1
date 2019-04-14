@@ -19,13 +19,14 @@ public class RequestionActivity extends AppCompatActivity {
     private int COARSE_LOCATION_CODE =2;
     private int ACCESS_WIFI_CODE = 3;
     private int CHANGE_WIFI_CODE =4;
+    private Button allowPermission;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_requestion);
 
-        Button allowPermission = findViewById(R.id.Requestpermission);
+         allowPermission = (Button) (findViewById(R.id.Requestpermission));
         allowPermission.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -64,6 +64,7 @@ public class DeviceList extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(DeviceList.this, DeviceDetail.class);
+                intent.putExtra("esp", results.get(position).SSID);
                 startActivity(intent);
             }
         });
@@ -112,7 +113,7 @@ public class DeviceList extends AppCompatActivity {
             results = wifiManager.getScanResults();
             unregisterReceiver(this);
             for(int i=0;i<results.size();i++){
-                if(results.get(i).SSID.equals("khaledgazya")){
+                if(results.get(i).SSID.equals("Nadeem")){
                     espinfo ="SSID:  " + results.get(i).SSID +"      " + "MAC Address:  " + results.get(i).BSSID;
                     esps.add(espinfo);
                 }
